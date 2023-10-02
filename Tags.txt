@@ -1,0 +1,36 @@
+HTML-CSS Etiketleri
+
+-> list-style-type: none; (listelerin başındaki noktaları kaldırır)
+
+-> margin: 0;
+   padding: 0; 	(tarayıcının kenar ve boşluklarını sıfırlar)
+
+-> display: block; (Bağlantıları blok öğeleri olarak görüntülemek, tüm bağlantı alanını (yalnızca metni değil) tıklanabilir hale getirir ve genişliği (ve isterseniz dolgu, kenar boşluğu, yükseklik vb.) belirtmemize olanak tanır.) 
+
+-> width: ..px; (blok ögeleri mevcut tüm alanı kaplar ama bu etiketle genişliğini değiştirebiliriz)
+
+-> text-decoration: ...; (metinlerdeki biçimlendirmeleri ayarlamak veya kaldırmak için kullanırız)
+
+-> text-decoration: none; (linklerdeki alt çizgiyi kaldırır)
+
+-> text-align: center; (bağlantıların içeriğini ortalamak için kullanılır)
+
+-> border: 1px solid #fff; (1px boyutunda / düz / beyaz kenarlık ekler )
+
+-> border-bottom: none; (metinlerdeki alt çizgiyi siler)
+
+-> overflow: auto; (ekrandan taşacağı zaman scrollu etkinleştirir)
+
+-> position: fixed; (scroll ile kaydırma sırasında ekrandan kaybolmasını engeller.Yani ekrana yapışır)
+
+-> display: inline; (tüm liste elemanlarını tek satırda gözükmesini sağlar)
+
+-> float: left; (li elementlerini kaydırır)
+
+-> float: right; (li elementlerini sağa kaydırır)
+
+-> border-right: none; (linklerin sağına kenar ekler)
+
+-> overflow: scroll: (taşan içerik çerçeve içine alınır ve kaydırma çubukları ile gösterilir)
+
+-> position: sticky; (yapışkan bir gezinme çubuğu oluşturur yani scroll kaydırıldığında navbar da birlikte gelir)
