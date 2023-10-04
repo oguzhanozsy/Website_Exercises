@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   /* toplam boyuta padding ve margin değerlerini dahil eder */
+}
+
+body {
+    background-image: url(chicago.jpg);  /* arka plana resim atar */
+    background-size: cover;  /* atılan resmin tam ekran olmasını sağlar */
+    font-family: "Lato", sans-serif; /* fontunu ayarlar */
+    line-height: 1.5; /* yazının üst ve alt tarafla olan kalınlığını ayarlar*/
+}
+
+.navbar {
+    background: #000000; /* arka plan rengini verir */    
+}
+
+.navbar ul {
+    display: inline-flex; /* navbardaki tagların yan yana gelmesini sağlar */ 
+    list-style: none; /* linklerin başındaki noktaları kaldırır */
+}
+
+.navbar ul li {
+    width: 100px;
+    padding: 12px 24px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none; /* linklerin altındaki çizgileri kaldırır */
+}
+.navbar ul li a:hover { /* üzerine geldiğinde içindekiler olur */
+    background-color: rgb(204, 204, 204);
+    color: black;
+}
+
+.navbar .icon:hover { /* iconun üzerine geldiğinde içindekiler olsun */
+    color: white;
+    background-color: red;
+}

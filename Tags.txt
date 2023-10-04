@@ -46,6 +46,16 @@ HTML-CSS Etiketleri
 
 -> background: transparent; (arka planı saydam gösterir, yani arka plan rengi varsa kaldırır)
 
+-> background-size: cover: (Resmi tam ekran boyutuna sığdırır, bu da sayfanın boyutlarına uygun olarak ölçekler)
+
+-> background-attachment: fixed: (Resmin kaydırıldığında sabit kalmasını sağlar)
+
+-> background-position: center: (Resmi yatay ve dikey olarak sayfanın ortasına hizalar)
+
+-> background-repeat: no-repeat: (Resmin yinelenmemesini sağlar)
+
+
+
 ***********************************************************************************************************************
 
 -> overflow: auto; (ekrandan taşacağı zaman scrollu etkinleştirir)
@@ -70,7 +80,7 @@ HTML-CSS Etiketleri
 
 -> float: ....; (text-align ile karşılaştırırsak: text-align bir kutunun içeriğine etki ederken, float kutunun kendisine etki eder)
 
--> float: left; (li elementlerini kaydırır)
+-> float: left; (li elementlerini sola kaydırır)
 
 -> float: right; (li elementlerini sağa kaydırır)
 
@@ -80,10 +90,13 @@ HTML-CSS Etiketleri
 
 -> cursor: pointer; (üzerine gelindiğinde imlecin pointer şekli olarak değişmesini sağlar)
 
+***********************************************************************************************************************
 
+-> height: 100vh: (Sayfanın yüksekliğini tam ekran yüksekliği (viewport height) olarak ayarlar)
 
+***********************************************************************************************************************
 
-
+-> line-height: ....;  (yazının üst ve alt tarafla olan kalınlığını ayarlar)
 
 
 
