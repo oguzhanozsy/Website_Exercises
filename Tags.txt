@@ -7,6 +7,8 @@ HTML-CSS Etiketleri
 -> margin: 0;
    padding: 0; 	(tarayıcının kenar ve boşluklarını sıfırlar)
 
+-> margin-top: -40px; (margin ve padding'lere verilen sayı eksi olursa normalde yapacağı kaydırma işlemini tam tersi yönde yapar. Mesela burda normalde yukarıdan 40px aşağı gelirdi ama eksi olduğu için yukarı 40px gider)   
+
 ***********************************************************************************************************************   
 
 -> display: block; (Bağlantıları blok öğeleri olarak görüntülemek, tüm bağlantı alanını (yalnızca metni değil) tıklanabilir hale getirir ve genişliği (ve isterseniz dolgu, kenar boşluğu, yükseklik vb.) belirtmemize olanak tanır.) 

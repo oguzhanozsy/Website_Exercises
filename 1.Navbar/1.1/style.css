@@ -81,5 +81,9 @@ body {
 }
 
 .hover-me:hover .sub-menu-2 { /* hover-me class'ına sahip olan linklerin üstüne geldiğimizde aşağıdakiler olsun*/
-    
+    position: absolute; /* bulunduğu div'e göre boyutu alınır */
+    display: block; /* gizlenen menünün ortaya çıkmasını sağlar */
+    margin-top: -37px; /* yukarı kaydırır */
+    margin-left: 140px; /* sağa doğru kaydırır */
+    background: #5b71b5;
 }
