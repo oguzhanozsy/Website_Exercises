@@ -2,35 +2,88 @@ HTML-CSS Etiketleri
 
 -> list-style-type: none; (listelerin başındaki noktaları kaldırır)
 
+***********************************************************************************************************************
+
 -> margin: 0;
    padding: 0; 	(tarayıcının kenar ve boşluklarını sıfırlar)
 
+***********************************************************************************************************************   
+
 -> display: block; (Bağlantıları blok öğeleri olarak görüntülemek, tüm bağlantı alanını (yalnızca metni değil) tıklanabilir hale getirir ve genişliği (ve isterseniz dolgu, kenar boşluğu, yükseklik vb.) belirtmemize olanak tanır.) 
+   (ayrıca yan yana olan taglere satır başı yapar ve alt alta alır)
+
+***********************************************************************************************************************   
 
 -> width: ..px; (blok ögeleri mevcut tüm alanı kaplar ama bu etiketle genişliğini değiştirebiliriz)
+
+***********************************************************************************************************************
 
 -> text-decoration: ...; (metinlerdeki biçimlendirmeleri ayarlamak veya kaldırmak için kullanırız)
 
 -> text-decoration: none; (linklerdeki alt çizgiyi kaldırır)
 
+-> text-align: ....; (float ile karşılaştırırsak: text-align bir kutunun içeriğine etki ederken, float kutunun kendisine etki eder)
+
 -> text-align: center; (bağlantıların içeriğini ortalamak için kullanılır)
+
+-> text-align: left; (sol tarafa hizalar)
+
+***********************************************************************************************************************
 
 -> border: 1px solid #fff; (1px boyutunda / düz / beyaz kenarlık ekler )
 
 -> border-bottom: none; (metinlerdeki alt çizgiyi siler)
 
+-> border-bottom: 1px dotted #fff; (border'ın alt kısmına 1px boyutunda/çizgili/beyaz çizgiler ekler)
+
+-> border-right: none; (linklerin sağına kenar ekler)
+
+-> box-sizing; (bir etiketin toplam genişliğine ve yüksekliğine padding ve border'ı dahil etmemizi sağlar)
+
+-> box-sizing: borderbox; (bir etikette padding ve border , genişlik ve yüksekliğe dahil edilir)
+
+-> background: transparent; (arka planı saydam gösterir, yani arka plan rengi varsa kaldırır)
+
+***********************************************************************************************************************
+
 -> overflow: auto; (ekrandan taşacağı zaman scrollu etkinleştirir)
+
+-> overflow: scroll: (taşan içerik çerçeve içine alınır ve kaydırma çubukları ile gösterilir)
+
+***********************************************************************************************************************
 
 -> position: fixed; (scroll ile kaydırma sırasında ekrandan kaybolmasını engeller.Yani ekrana yapışır)
 
--> display: inline; (tüm liste elemanlarını tek satırda gözükmesini sağlar)
+-> position: sticky; (yapışkan bir gezinme çubuğu oluşturur yani scroll kaydırıldığında navbar da birlikte gelir)
+
+-> position: absolute; (en yakın pozisyon değeri relative olan elemana göre kendini konumlandırır.)
+
+***********************************************************************************************************************
+
+-> display: inline-flex; (tüm liste elemanlarını tek satırda gözükmesini sağlar)
+
+-> display: none; (bir öge tüm içeriği ile gizlenecek ve yok sayılacaktır)
+
+***********************************************************************************************************************
+
+-> float: ....; (text-align ile karşılaştırırsak: text-align bir kutunun içeriğine etki ederken, float kutunun kendisine etki eder)
 
 -> float: left; (li elementlerini kaydırır)
 
 -> float: right; (li elementlerini sağa kaydırır)
 
--> border-right: none; (linklerin sağına kenar ekler)
+-> font-family: ...; (yazı fontunu ayarlar);
 
--> overflow: scroll: (taşan içerik çerçeve içine alınır ve kaydırma çubukları ile gösterilir)
+***********************************************************************************************************************
 
--> position: sticky; (yapışkan bir gezinme çubuğu oluşturur yani scroll kaydırıldığında navbar da birlikte gelir)
+-> cursor: pointer; (üzerine gelindiğinde imlecin pointer şekli olarak değişmesini sağlar)
+
+
+
+
+
+
+
+
+
+

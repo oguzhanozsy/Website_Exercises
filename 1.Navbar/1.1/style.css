@@ -1,0 +1,85 @@
+* {    /* reset-css */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  /* toplam boyuta padding ve margin değerlerini dahil eder */
+}
+
+body {
+    background-image: url(image.jpg); /* arka plana resim koyar */
+    font-family: sans-serif;  /* yazı fontunu ayarlar */
+}
+
+.menu-bar {
+    background: #5b71b5; /* arka plan rengini verir */
+    text-align: center; /* yazıları ortaya alır */
+}
+
+.menu-bar ul {
+    display: inline-flex;  /* navbardaki tagların yan yana gelmesini sağlar */
+    list-style: none;  /* linklerin başındaki noktaları kaldırır */
+}
+
+.menu-bar ul li {  /* aralarındaki,üstündeki ve altındaki boşlukları ayarlar */
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none; /* linkin altındaki çizgiyi kaldırır */ 
+    color: #fff; /* yazı rengini verir */
+}
+
+.active, .menu-bar ul li:hover {  /* class isminden sonra , konulursa içerdeki özellik o class'a sabitlenir. (active,) 'deki gibi */
+    background: #d4c995;
+    border-radius: 10px;  /* borderları ovalleştirir */
+}
+
+.menu-bar .fas {  /* iconlara ulaşır */
+    margin-right: 8px; /* iconların sağına boşluk verir */
+}
+
+.sub-menu-1 {
+    display: none; /* hakkımızda kısmının üstüne geldiğimizde çıkan menünün gizlenmesini sağlar*/
+}
+
+.menu-bar ul li:hover .sub-menu-1 { /* hakkımızdanın üzerine geldiğimizde sub-menu-1 şöyle olsun */
+    display: block;  /* içindekiler gözüksün */
+    position: absolute; /* sadece olduğu div'i kapsasın */
+    background: #5b71b5;
+    margin-top: 15px; /* yukarıdaki divden uzaklaştırdı */
+    margin-left: -15px; /* sola kaydırdı */
+    font-size: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block; /* misyonumuz,vizyonumuz,takımımız taglarını alt alta konumlanmasını sağlar*/
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;  /* altlarına kesikli çizgi ekler*/
+    background: transparent; /* arka planı saydam gösterir, yani arka plan rengi varsa kaldırır */ 
+    text-align: left; /* sola konumlandırır */
+    border-radius: 0; /* border'ın kavisini sıfırlar */
+    cursor: pointer; /* üzerine gelindiğinde imlecin pointer şekli olarak değişmesini sağlar */
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover { /* sub-menu-1'deki a'ların üzerine gelindiğinde aşağıdaki özellikler aktif olur */
+    color: #b2ff00; /* üzerine gelindiğinde renginin değiştirir */ 
+}
+
+.fa-caret-right {
+    font-size: 14px;
+    color: #fff;
+    float: right; /* sağ tarafa konumlandırır */
+}
+
+.sub-menu-2 {
+    display: none; /* menünün gizlenmesini sağlar */
+}
+
+.hover-me:hover .sub-menu-2 { /* hover-me class'ına sahip olan linklerin üstüne geldiğimizde aşağıdakiler olsun*/
+    
+}
