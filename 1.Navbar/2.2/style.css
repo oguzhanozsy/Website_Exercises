@@ -7,6 +7,7 @@
 body {
     background-image: url(chicago.jpg);  /* arka plana resim atar */
     background-size: cover;  /* atılan resmin tam ekran olmasını sağlar */
+    background-position: bottom; /* resmi aşağı kaydırır */
     font-family: "Lato", sans-serif; /* fontunu ayarlar */
     line-height: 1.5; /* yazının üst ve alt tarafla olan kalınlığını ayarlar*/
 }
@@ -28,10 +29,20 @@ body {
 .navbar ul li a {
     color: #fff;
     text-decoration: none; /* linklerin altındaki çizgileri kaldırır */
+     /* yazının çevresinide tıklanabilir yapar*/
+    float: left; 
+    text-align: center;
+
 }
+
 .navbar ul li a:hover { /* üzerine geldiğinde içindekiler olur */
     background-color: rgb(204, 204, 204);
     color: black;
+}
+
+.navbar .icon-li {
+    position: relative; /* yukarı,aşağı,sağa,sola istediğimiz gibi kaydırma özelliğini açar */
+    left: 71rem;
 }
 
 .navbar .icon:hover { /* iconun üzerine geldiğinde içindekiler olsun */

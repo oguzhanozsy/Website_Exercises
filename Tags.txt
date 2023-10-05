@@ -46,15 +46,17 @@ HTML-CSS Etiketleri
 
 -> background: transparent; (arka planı saydam gösterir, yani arka plan rengi varsa kaldırır)
 
--> background-size: cover: (Resmi tam ekran boyutuna sığdırır, bu da sayfanın boyutlarına uygun olarak ölçekler)
+-> background-size: cover; (Resmi tam ekran boyutuna sığdırır, bu da sayfanın boyutlarına uygun olarak ölçekler)
 
--> background-attachment: fixed: (Resmin kaydırıldığında sabit kalmasını sağlar)
+-> background-attachment: fixed; (Resmin kaydırıldığında sabit kalmasını sağlar)
 
--> background-position: center: (Resmi yatay ve dikey olarak sayfanın ortasına hizalar)
+-> background-position: center; (Resmi yatay ve dikey olarak sayfanın ortasına hizalar)
 
--> background-repeat: no-repeat: (Resmin yinelenmemesini sağlar)
+-> background-repeat: no-repeat; (Resmin yinelenmemesini sağlar)
 
+-> background-position: ......; (resmin konumunu ayarlar)
 
+-> background-position: bottom;  (resmi aşağı kaydırır)
 
 ***********************************************************************************************************************
 
@@ -69,6 +71,8 @@ HTML-CSS Etiketleri
 -> position: sticky; (yapışkan bir gezinme çubuğu oluşturur yani scroll kaydırıldığında navbar da birlikte gelir)
 
 -> position: absolute; (en yakın pozisyon değeri relative olan elemana göre kendini konumlandırır.)
+
+-> position: relative; (yukarı,aşağı,sağa,sola istediğimiz gibi kaydırma özelliğini açar. Bundan sonra left: ...; vs diyip ölçü verilir)
 
 ***********************************************************************************************************************
 
