@@ -23,6 +23,16 @@ body {
     text-transform: uppercase; /* tüm metni büyük harf yapar */
     text-align: center;
     margin-bottom: 30px;
+    cursor: pointer;  /* fare imlecini değiştirir */
+    transition: .5s;  /* hover geçişine saniye verir */
+}
+
+.container .sidebar h2 span {
+    color: #f2b354;
+}
+
+.container .sidebar h2:hover {
+    color: #f2b354;
 }
 
 .container .sidebar ul li a {

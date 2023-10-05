@@ -32,6 +32,8 @@ HTML-CSS Etiketleri
 
 -> text-transform: uppercase; (tüm metni büyük harf yapar)
 
+-> transition: .5s;  (hover geçişine saniye verir)
+
 ***********************************************************************************************************************
 
 -> border: 1px solid #fff; (1px boyutunda / düz / beyaz kenarlık ekler )
