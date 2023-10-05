@@ -42,7 +42,7 @@ body {
 
 .navbar .icon-li {
     position: relative; /* yukarı,aşağı,sağa,sola istediğimiz gibi kaydırma özelliğini açar */
-    left: 71rem;
+    left: 69rem;
 }
 
 .navbar .icon:hover { /* iconun üzerine geldiğinde içindekiler olsun */

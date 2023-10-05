@@ -30,6 +30,8 @@ HTML-CSS Etiketleri
 
 -> text-align: left; (sol tarafa hizalar)
 
+-> text-transform: uppercase; (tüm metni büyük harf yapar)
+
 ***********************************************************************************************************************
 
 -> border: 1px solid #fff; (1px boyutunda / düz / beyaz kenarlık ekler )
