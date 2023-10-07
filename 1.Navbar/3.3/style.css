@@ -31,6 +31,11 @@ body {
     color: #f2b354;
 }
 
+.container .sidebar h2 span:hover {
+    color: #fff;
+    transition: .5s; /* hover geçişine saniye verir */
+}
+
 .container .sidebar h2:hover {
     color: #f2b354;
 }
@@ -38,3 +43,57 @@ body {
 .container .sidebar ul li a {
     color: #fff;
 }
+
+.container .sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid black; /* listlerin altına siyah çizgi çizer */
+}
+
+
+.container .sidebar ul li:hover {
+    background: black;
+    transition: .5s;  /* hover geçişine saniye verir */
+}   
+
+.container .sidebar .social-media {
+    position: absolute;  /* bi üstündeki div'e göre kendini konumlandır,kalıp al demek*/ 
+    bottom: 0; /* aşağıya sıfırlamak */
+    left: 50%;
+    transform: translate(-50%); /* bu ve left: 50%; tag'ı tam ortada durmasını sağlar*/
+    display: flex; /* aşağıda inse yukarıda çıksa sabit durmasını sağlar */
+}
+
+.container .sidebar .social-media a {
+    display: block;
+    width: 40px;
+    background-color: black;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 5px; /* birbirlerinden uzaklaştırmasını sağlar */
+    color: #fff;
+    border-top-right-radius: 5px; /* sağ üst kısmı ovalleştirdi */
+    border-top-left-radius: 5px; /* sol üst kısmı ovalleştirdi */
+}
+
+.container .sidebar .social-media a:hover {
+    background-color: #3B5998;
+    transition: .5s;
+}
+
+.container .main-content {
+    margin-left: 200px; /* soldan şu kadar uzaklaştırır */
+}
+
+.container .main-content .header {
+    padding: 20px;
+    background: #fff;
+    color: #717171;
+}
+
+.container .main-content .info {
+    margin: 20px;
+    color: #717171;
+    line-height: 25px; /* satırların arasını açar */
+}
+

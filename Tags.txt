@@ -9,6 +9,8 @@ HTML-CSS Etiketleri
 
 -> margin-top: -40px; (margin ve padding'lere verilen sayı eksi olursa normalde yapacağı kaydırma işlemini tam tersi yönde yapar. Mesela burda normalde yukarıdan 40px aşağı gelirdi ama eksi olduğu için yukarı 40px gider)   
 
+-> margin-left: ...; (soldan ... kadar uzaklaştırır)
+
 ***********************************************************************************************************************   
 
 -> display: block; (Bağlantıları blok öğeleri olarak görüntülemek, tüm bağlantı alanını (yalnızca metni değil) tıklanabilir hale getirir ve genişliği (ve isterseniz dolgu, kenar boşluğu, yükseklik vb.) belirtmemize olanak tanır.) 
@@ -34,7 +36,13 @@ HTML-CSS Etiketleri
 
 -> transition: .5s;  (hover geçişine saniye verir)
 
+-> transform: translate(-50%); (bu ve left: 50%; tag'ı tam ortada durmasını sağlar)
+
 ***********************************************************************************************************************
+
+-> border-top-right-radius: ...; (sağ üst kısmı ovalleştirir)
+   
+-> border-top-left-radius: ...; (sol üst kısmı ovalleştirir)
 
 -> border: 1px solid #fff; (1px boyutunda / düz / beyaz kenarlık ekler )
 
