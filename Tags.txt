@@ -1,44 +1,9 @@
 HTML-CSS Etiketleri
 
--> list-style-type: none; (listelerin başındaki noktaları kaldırır)
-
 ***********************************************************************************************************************
-
--> margin: 0;
-   padding: 0; 	(tarayıcının kenar ve boşluklarını sıfırlar)
-
--> margin-top: -40px; (margin ve padding'lere verilen sayı eksi olursa normalde yapacağı kaydırma işlemini tam tersi yönde yapar. Mesela burda normalde yukarıdan 40px aşağı gelirdi ama eksi olduğu için yukarı 40px gider)   
-
--> margin-left: ...; (soldan ... kadar uzaklaştırır)
-
-***********************************************************************************************************************   
-
--> display: block; (Bağlantıları blok öğeleri olarak görüntülemek, tüm bağlantı alanını (yalnızca metni değil) tıklanabilir hale getirir ve genişliği (ve isterseniz dolgu, kenar boşluğu, yükseklik vb.) belirtmemize olanak tanır.) 
-   (ayrıca yan yana olan taglere satır başı yapar ve alt alta alır)
-
-***********************************************************************************************************************   
-
--> width: ..px; (blok ögeleri mevcut tüm alanı kaplar ama bu etiketle genişliğini değiştirebiliriz)
-
+A-a:
 ***********************************************************************************************************************
-
--> text-decoration: ...; (metinlerdeki biçimlendirmeleri ayarlamak veya kaldırmak için kullanırız)
-
--> text-decoration: none; (linklerdeki alt çizgiyi kaldırır)
-
--> text-align: ....; (float ile karşılaştırırsak: text-align bir kutunun içeriğine etki ederken, float kutunun kendisine etki eder)
-
--> text-align: center; (bağlantıların içeriğini ortalamak için kullanılır)
-
--> text-align: left; (sol tarafa hizalar)
-
--> text-transform: uppercase; (tüm metni büyük harf yapar)
-
--> transition: .5s;  (hover geçişine saniye verir)
-
--> transform: translate(-50%); (bu ve left: 50%; tag'ı tam ortada durmasını sağlar)
-
-***********************************************************************************************************************
+B-b:
 
 -> border-top-right-radius: ...; (sağ üst kısmı ovalleştirir)
    
@@ -71,12 +36,80 @@ HTML-CSS Etiketleri
 -> background-position: bottom;  (resmi aşağı kaydırır)
 
 ***********************************************************************************************************************
+C-c:
+
+-> cursor: pointer; (üzerine gelindiğinde imlecin pointer şekli olarak değişmesini sağlar)
+
+***********************************************************************************************************************
+D-d:
+
+-> display: block; (Bağlantıları blok öğeleri olarak görüntülemek, tüm bağlantı alanını (yalnızca metni değil) tıklanabilir hale getirir ve genişliği (ve isterseniz dolgu, kenar boşluğu, yükseklik vb.) belirtmemize olanak tanır.) 
+(ayrıca yan yana olan taglere satır başı yapar ve alt alta alır)
+
+-> display: inline-flex; (tüm liste elemanlarını tek satırda gözükmesini sağlar)
+
+-> display: none; (bir öge tüm içeriği ile gizlenecek ve yok sayılacaktır)
+
+***********************************************************************************************************************
+E-e:
+
+-> <em></em> (arasına yazılan yazıyı italic yapar)
+***********************************************************************************************************************
+F-f:
+
+-> float: ....; (text-align ile karşılaştırırsak: text-align bir kutunun içeriğine etki ederken, float kutunun kendisine etki eder)
+
+-> float: left; (li elementlerini sola kaydırır)
+
+-> float: right; (li elementlerini sağa kaydırır)
+
+-> font-family: ...; (yazı fontunu ayarlar)
+
+-> font-size: ...; (yazının bouyutunu ayarlar)
+
+***********************************************************************************************************************
+G-g:
+***********************************************************************************************************************
+H-h:
+
+-> height: 100vh: (Sayfanın yüksekliğini tam ekran yüksekliği (viewport height) olarak ayarlar)
+
+***********************************************************************************************************************
+I-i:
+***********************************************************************************************************************
+J-j:
+***********************************************************************************************************************
+K-k:
+***********************************************************************************************************************
+L-l:
+
+-> list-style-type: none; (listelerin başındaki noktaları kaldırır)
+
+-> line-height: ....;  (yazının üst ve alt tarafla olan kalınlığını ayarlar)
+
+***********************************************************************************************************************
+M-m:
+
+-> margin: 0;
+   padding: 0; 	(tarayıcının kenar ve boşluklarını sıfırlar)
+
+-> margin-top: -40px; (margin ve padding'lere verilen sayı eksi olursa normalde yapacağı kaydırma işlemini tam tersi yönde yapar. Mesela burda normalde yukarıdan 40px aşağı gelirdi ama eksi olduğu için yukarı 40px gider)   
+
+-> margin-left: ...; (soldan ... kadar uzaklaştırır)
+
+-> <mark></mark> (arasına yazılan yazıyı vurgular)
+
+***********************************************************************************************************************
+N-n:
+***********************************************************************************************************************
+O-o:
 
 -> overflow: auto; (ekrandan taşacağı zaman scrollu etkinleştirir)
 
 -> overflow: scroll: (taşan içerik çerçeve içine alınır ve kaydırma çubukları ile gösterilir)
 
 ***********************************************************************************************************************
+P-p:
 
 -> position: fixed; (scroll ile kaydırma sırasında ekrandan kaybolmasını engeller.Yani ekrana yapışır)
 
@@ -87,32 +120,54 @@ HTML-CSS Etiketleri
 -> position: relative; (yukarı,aşağı,sağa,sola istediğimiz gibi kaydırma özelliğini açar. Bundan sonra left: ...; vs diyip ölçü verilir)
 
 ***********************************************************************************************************************
+Q-q:
+***********************************************************************************************************************
+R-r:
+***********************************************************************************************************************
+S-s:
 
--> display: inline-flex; (tüm liste elemanlarını tek satırda gözükmesini sağlar)
+-> <strong></strong> (arasına yazılan yazılar daha kalın gözükür)
 
--> display: none; (bir öge tüm içeriği ile gizlenecek ve yok sayılacaktır)
+-> <small></small> (arasına yazılan yazının daha küçük görünmesini sağlar)
+
+-> <sub></sub> (arasına yazılan yazıyı alt text yapar)
+ 
+***********************************************************************************************************************
+T-t:
+
+-> text-decoration: ...; (metinlerdeki biçimlendirmeleri ayarlamak veya kaldırmak için kullanırız)
+
+-> text-decoration: none; (linklerdeki alt çizgiyi kaldırır)
+
+-> text-align: ....; (float ile karşılaştırırsak: text-align bir kutunun içeriğine etki ederken, float kutunun kendisine etki eder)
+
+-> text-align: center; (bağlantıların içeriğini ortalamak için kullanılır)
+
+-> text-align: left; (sol tarafa hizalar)
+
+-> text-transform: uppercase; (tüm metni büyük harf yapar)
+
+-> transition: .5s;  (hover geçişine saniye verir)
+
+-> transform: translate(-50%); (bu ve left: 50%; tag'ı tam ortada durmasını sağlar)
 
 ***********************************************************************************************************************
+U-u:
+***********************************************************************************************************************
+V-v:
+***********************************************************************************************************************
+W-w:
 
--> float: ....; (text-align ile karşılaştırırsak: text-align bir kutunun içeriğine etki ederken, float kutunun kendisine etki eder)
-
--> float: left; (li elementlerini sola kaydırır)
-
--> float: right; (li elementlerini sağa kaydırır)
-
--> font-family: ...; (yazı fontunu ayarlar);
+-> width: ..px; (blok ögeleri mevcut tüm alanı kaplar ama bu etiketle genişliğini değiştirebiliriz)
 
 ***********************************************************************************************************************
-
--> cursor: pointer; (üzerine gelindiğinde imlecin pointer şekli olarak değişmesini sağlar)
-
+X-x:
+***********************************************************************************************************************
+Y-y:
+***********************************************************************************************************************
+Z-z:
 ***********************************************************************************************************************
 
--> height: 100vh: (Sayfanın yüksekliğini tam ekran yüksekliği (viewport height) olarak ayarlar)
-
-***********************************************************************************************************************
-
--> line-height: ....;  (yazının üst ve alt tarafla olan kalınlığını ayarlar)
 
 
 
