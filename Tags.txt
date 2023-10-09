@@ -5,6 +5,8 @@ A-a:
 ***********************************************************************************************************************
 B-b:
 
+-> border-collapse:collapse; (hücrelerin sınırlarının ve boş hücre etkilerini ortadan kaldırır)
+
 -> border-top-right-radius: ...; (sağ üst kısmı ovalleştirir)
    
 -> border-top-left-radius: ...; (sol üst kısmı ovalleştirir)
@@ -45,6 +47,10 @@ D-d:
 
 -> display: block; (Bağlantıları blok öğeleri olarak görüntülemek, tüm bağlantı alanını (yalnızca metni değil) tıklanabilir hale getirir ve genişliği (ve isterseniz dolgu, kenar boşluğu, yükseklik vb.) belirtmemize olanak tanır.) 
 (ayrıca yan yana olan taglere satır başı yapar ve alt alta alır)
+
+-> display: inline; (sadece kendi alanını kaplar ve elemanların yan yana gelmesini sağlar)
+
+-> display: inline-block; (inline elemanlarının block gibi davranmasını sağlar)
 
 -> display: inline-flex; (tüm liste elemanlarını tek satırda gözükmesini sağlar)
 
@@ -168,8 +174,15 @@ Y-y:
 Z-z:
 ***********************************************************************************************************************
 
+NOT:
 
+-> block elemanları bulunduğu tüm satırı kapsar ama inline elemanlar sadece kendi alanını kapsar.
 
+-> block elemanlarına width ve height verebiliriz ama inline elemanlarına veremeyiz. inline elemanlarına sadece padding ve margin değerleri verilebilir. 
+Ama inline elemanları  display:inline-block; tag'ını kullanarak block gibi davranmasını sağlayabiliriz. 
 
+-> div ve span başka elemanları gruplamak için kullanılan etiketlerdir. div block-leveldır. span ise inline-leveldır.
+
+-> id sadece bir defa kullanılabilir ama class birden fazla yerde kullanılabilir.
 
 
