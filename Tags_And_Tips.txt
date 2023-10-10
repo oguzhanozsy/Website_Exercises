@@ -5,7 +5,15 @@ A-a:
 ***********************************************************************************************************************
 B-b:
 
+-> border-width: ...; (kutuların çerçevesinin kalınlığını ayarlar)
+
+-> border-color: ...; (kutuların çerçevesinin rengini ayarlar)
+
+-> border-style: ...; (kutuların çerçevesinin şeklini ayarlar)
+
 -> border-collapse:collapse; (hücrelerin sınırlarının ve boş hücre etkilerini ortadan kaldırır)
+
+-> border-radius: ...; (borderların kenarlarını ovalleştirir. width ve height değerleriyle radius değerini aynı yaparsak tam oval bir div oluştururuz)
 
 -> border-top-right-radius: ...; (sağ üst kısmı ovalleştirir)
    
@@ -17,7 +25,7 @@ B-b:
 
 -> border-bottom: 1px dotted #fff; (border'ın alt kısmına 1px boyutunda/çizgili/beyaz çizgiler ekler)
 
--> border-right: none; (linklerin sağına kenar ekler)
+-> border-right: none; (border içindeki linklerin sağındaki kenarı siler)
 
 -> box-sizing; (bir etiketin toplam genişliğine ve yüksekliğine padding ve border'ı dahil etmemizi sağlar)
 
@@ -25,13 +33,17 @@ B-b:
 
 -> background: transparent; (arka planı saydam gösterir, yani arka plan rengi varsa kaldırır)
 
--> background-size: cover; (Resmi tam ekran boyutuna sığdırır, bu da sayfanın boyutlarına uygun olarak ölçekler)
+-> background-size: cover; (Resmi tam ekran boyutuna sığdırır, bu da sayfanın boyutlarına uygun olarak ölçekler veya resme width ve height verdiysekte onunla aynı oranda küçültüp sığdırır.)
 
--> background-attachment: fixed; (Resmin kaydırıldığında sabit kalmasını sağlar)
+-> background-attachment: fixed; (Scroll ile sayfa kaydırıldığında resmin sabit kalmasını sağlar)
 
 -> background-position: center; (Resmi yatay ve dikey olarak sayfanın ortasına hizalar)
 
 -> background-repeat: no-repeat; (Resmin yinelenmemesini sağlar)
+
+-> background-repeat: repeat-x; (Resmin x ekseninde yinelenmesini sağlar)
+
+-> background-repeat: repeat-y; (Resmin y ekseninde yinelenmesini sağlar)
 
 -> background-position: ......; (resmin konumunu ayarlar)
 
@@ -82,6 +94,8 @@ H-h:
 
 ***********************************************************************************************************************
 I-i:
+
+-> !important; (herhangi bir css özelliğinin başka yerde değiştirilmemesi için bu ifade o özelliğin sonuna eklenir)
 ***********************************************************************************************************************
 J-j:
 ***********************************************************************************************************************
@@ -91,19 +105,25 @@ L-l:
 
 -> list-style-type: none; (listelerin başındaki noktaları kaldırır)
 
--> line-height: ....;  (yazının üst ve alt tarafla olan kalınlığını ayarlar)
+-> line-height: ....;  (yazının üst ve alt tarafla olan kalınlığını ayarlar veya iki satır arasındaki boşluk olarak da kullanılabilir)
 
 ***********************************************************************************************************************
 M-m:
 
 -> margin: 0;
-   padding: 0; 	(tarayıcının kenar ve boşluklarını sıfırlar)
+   padding: 0; 	(tarayıcının kenar ve boşluklarını sıfırlar.reset css olarak geçer)
 
 -> margin-top: -40px; (margin ve padding'lere verilen sayı eksi olursa normalde yapacağı kaydırma işlemini tam tersi yönde yapar. Mesela burda normalde yukarıdan 40px aşağı gelirdi ama eksi olduğu için yukarı 40px gider)   
 
 -> margin-left: ...; (soldan ... kadar uzaklaştırır)
 
+-> width: 50%;
+   margin-left: auto;
+   margin-right: auto; (bu özellikleri beraber kullanırsak div'imizi otomatik tam ortaya alır. width özelliğide sayfa küçültülse bile tam ortada kalmasını sağlar) 
+
 -> <mark></mark> (arasına yazılan yazıyı vurgular)
+
+-> max-width: 700px; (div'in css özelliğine bunu verirsek maximum 700px genişliğinde olmasını sağlar sayfayı küçültüncede altta scroll oluşmaz)
 
 ***********************************************************************************************************************
 N-n:
@@ -113,6 +133,8 @@ O-o:
 -> overflow: auto; (ekrandan taşacağı zaman scrollu etkinleştirir)
 
 -> overflow: scroll: (taşan içerik çerçeve içine alınır ve kaydırma çubukları ile gösterilir)
+
+-> opacity: ...; (opaklık düzeyini ayarlar)
 
 ***********************************************************************************************************************
 P-p:
@@ -145,6 +167,8 @@ T-t:
 
 -> text-decoration: none; (linklerdeki alt çizgiyi kaldırır)
 
+-> text-decoration: underline; (textlerin altına çizgi ekler)
+
 -> text-align: ....; (float ile karşılaştırırsak: text-align bir kutunun içeriğine etki ederken, float kutunun kendisine etki eder)
 
 -> text-align: center; (bağlantıların içeriğini ortalamak için kullanılır)
@@ -166,6 +190,8 @@ W-w:
 
 -> width: ..px; (blok ögeleri mevcut tüm alanı kaplar ama bu etiketle genişliğini değiştirebiliriz)
 
+-> width: 50%; (div'e %50 değerini verirsek sayfayı küçültsekte büyütsekte hep sayfanın %50si olarak kalır)
+ 
 ***********************************************************************************************************************
 X-x:
 ***********************************************************************************************************************
@@ -179,10 +205,27 @@ NOT:
 -> block elemanları bulunduğu tüm satırı kapsar ama inline elemanlar sadece kendi alanını kapsar.
 
 -> block elemanlarına width ve height verebiliriz ama inline elemanlarına veremeyiz. inline elemanlarına sadece padding ve margin değerleri verilebilir. 
-Ama inline elemanları  display:inline-block; tag'ını kullanarak block gibi davranmasını sağlayabiliriz. 
+Ama inline elemanları  display:inline-block; tag'ını kullanarak block gibi davranmasını sağlayabiliriz, bu sayede block gibi widthve height verilebilir
+inline gibi kendi alanını kaplar. 
 
 -> div ve span başka elemanları gruplamak için kullanılan etiketlerdir. div block-leveldır. span ise inline-leveldır.
 
 -> id sadece bir defa kullanılabilir ama class birden fazla yerde kullanılabilir.
 
+-> CSS 3 farklı türden oluşur.
+   1- Harici(External): .css dosyasının içine yazılır.
+   2- Dahili(Internal): html sayfasındaki head kısmının style etiketi altına yazılır.
+   3- Satır İçi(Inline): direkt tagların içine yazılır.
+
+-> bir tane tag'a css özelliği eklemek için seçerken hem id'sini hem de class'ını seçmek için araya virgül değil nokta koy.
+
+-> hiyararşik(adult-child) yapıdaki bir taga ulaşmak için en dıştan içe doğru, id veya classları yazarken araya boşluk bırakılır.
+
+-> birden fazla tag'a css özelliği eklemek için class veya id kullanırken araya virgül koy.
+
+-> margin diğer tag'lar arasındaki boşluğa denir.
+
+-> padding ise tag'ın border ve content kısmı arasındaki boşluğa denir. 
+
+-> width ve height'a verdiğimiz değerler content kısmını etkiler.
 
