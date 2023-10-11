@@ -27,9 +27,7 @@ B-b:
 
 -> border-right: none; (border içindeki linklerin sağındaki kenarı siler)
 
--> box-sizing; (bir etiketin toplam genişliğine ve yüksekliğine padding ve border'ı dahil etmemizi sağlar)
-
--> box-sizing: borderbox; (bir etikette padding ve border , genişlik ve yüksekliğe dahil edilir)
+-> box-sizing: borderbox; (bir etikette padding ve border'ı , width ve height'a dahil edilir. Genelde de tüm sayfada kullanmak için * etiketinin içine yazılır.)
 
 -> background: transparent; (arka planı saydam gösterir, yani arka plan rengi varsa kaldırır)
 
@@ -85,6 +83,10 @@ F-f:
 
 -> font-size: ...; (yazının bouyutunu ayarlar)
 
+-> font-style: italic; (yazıyı italik yapar)
+
+-> font-weight: bold; (yazıyı kalınlaştırır)
+
 ***********************************************************************************************************************
 G-g:
 ***********************************************************************************************************************
@@ -106,6 +108,10 @@ L-l:
 -> list-style-type: none; (listelerin başındaki noktaları kaldırır)
 
 -> line-height: ....;  (yazının üst ve alt tarafla olan kalınlığını ayarlar veya iki satır arasındaki boşluk olarak da kullanılabilir)
+
+-> letter-spacing: ...; (texttedi harflerin arasındaki boşluğu ayarlar) 
+
+-> list-style-type: none; (listlerin başındaki noktaları kaldırır)
 
 ***********************************************************************************************************************
 M-m:
@@ -147,6 +153,8 @@ P-p:
 
 -> position: relative; (yukarı,aşağı,sağa,sola istediğimiz gibi kaydırma özelliğini açar. Bundan sonra left: ...; vs diyip ölçü verilir)
 
+-> padding-left: ...; (border ile content arasına soldan boşluk verir)
+
 ***********************************************************************************************************************
 Q-q:
 ***********************************************************************************************************************
@@ -169,11 +177,13 @@ T-t:
 
 -> text-decoration: underline; (textlerin altına çizgi ekler)
 
+-> text-decoraiton: line-through; (textlerin üzerini çizer)
+
 -> text-align: ....; (float ile karşılaştırırsak: text-align bir kutunun içeriğine etki ederken, float kutunun kendisine etki eder)
 
--> text-align: center; (bağlantıların içeriğini ortalamak için kullanılır)
+-> text-align: center; (bağlantıların içeriğini veya textleri ortalamak için kullanılır)
 
--> text-align: left; (sol tarafa hizalar)
+-> text-align: left; ( textleri sol tarafa hizalar)
 
 -> text-transform: uppercase; (tüm metni büyük harf yapar)
 
@@ -229,3 +239,4 @@ inline gibi kendi alanını kaplar.
 
 -> width ve height'a verdiğimiz değerler content kısmını etkiler.
 
+-> pseudo classlarını(hover , ....vs) w3schollsda bulabilirsiniz
