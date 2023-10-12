@@ -3,7 +3,12 @@ HTML-CSS Etiketleri
 ***********************************************************************************************************************
 A-a:
 
-align-items: center; (flexboxda yukarıdan aşağıya tam ortalar. display: flex; özelliğinden sonra kullanılır)
+-> align-items: center; (flexboxda yukarıdan aşağıya tam ortalar. display: flex; özelliğinden sonra kullanılır)
+
+-> align-self: center; (flexboxtaki sadece bu özelliği yazdığımız kutuyu ortaya alır)
+
+-> align-items: center; (eğer itemların hepsini kapsayacak css özelliğine yazdıysak flexboxtaki itemların hepsini ortaya alır )
+
 
 ***********************************************************************************************************************
 B-b:
@@ -100,6 +105,10 @@ F-f:
 
 -> flex-wrap: wrap; (flexboxtaki divlerin satıra sığmayanlarını alt tarafa geçirir. display: flex; özelliğinden sonra kullanılır )
 
+-> flex-grow: 1; (flextaki divlerin yatay sırayı kaplamasını sağlar)
+
+-> flex: 1; (flex-grow ile aynı özelliğe sahip)
+
 ***********************************************************************************************************************
 G-g:
 ***********************************************************************************************************************
@@ -146,6 +155,8 @@ M-m:
 -> <mark></mark> (arasına yazılan yazıyı vurgular)
 
 -> max-width: 700px; (div'in css özelliğine bunu verirsek maximum 700px genişliğinde olmasını sağlar sayfayı küçültüncede altta scroll oluşmaz)
+
+-> min-height: ...; (div'in css özelliğine bunu verirsek verdiğimiz değerin üstüne content çıkarsa çıktığı kadar div'i yüksekliğini arttırır)
 
 ***********************************************************************************************************************
 N-n:
@@ -256,3 +267,18 @@ inline gibi kendi alanını kaplar.
 -> width ve height'a verdiğimiz değerler content kısmını etkiler.
 
 -> pseudo classlarını(hover , ....vs) w3schollsda bulabilirsiniz
+
+-> css'de yaptığımız websiteleri telefon,tablet veya pc'de boyutlarından ötürü farklı görünmek zorunda. Ve bunu o boyutlara göre ayarlamak zorundayız
+eğer ayarlamazsak sitede bozulmalar olur. Bunu şöyle ayarlarız;
+      
+      ***TABLET***
+      @media(max-width:768px) { 
+         ....css özellikleri
+      }
+
+      ***TELEFON***
+      @media(max-width:500px) {
+         ...css özellikleri
+      }
+
+
